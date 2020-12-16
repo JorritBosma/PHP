@@ -1,42 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require('partials/head.php'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDO</title>
-</head>
+<h1>Doelijst
+    <?= $takke; ?>
+</h1>
+<ul>
+    <?php foreach ($taakjes as $taak) : ?>
 
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="views/about.view.php">About us</a>
-            </li>
-            <li>
-                <a href="views/contact.view.php">Contact us</a>
-            </li>
-            <li>
-                <a href="views/about-culture.view.php">Our Culture</a>
-            </li>
-        </ul>
-    </nav>
-
-    <h1>Doelijst <?= $takke; ?></h1>
-    <ul>
-        <?php foreach ($taakjes as $taak) : ?>
-
-            <li>
-                <?php if ($taak->voltooid) : ?>
-                    <s><?= $taak->beschrijving ?></s>
-                <?php else : ?>
-
+        <li>
+            <?php if ($taak->voltooid) : ?>
+                <s>
                     <?= $taak->beschrijving ?>
-                <?php endif ?>
-            </li>
+                </s>
+            <?php else : ?>
 
-        <?php endforeach; ?>
-    </ul>
-</body>
+                <?= $taak->beschrijving ?>
+            <?php endif ?>
+        </li>
 
-</html>
+    <?php endforeach; ?>
+</ul>
+<?php require('partials/footer.php'); ?>

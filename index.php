@@ -1,5 +1,5 @@
 <?php
-
+$naam = 'Jorrit';
 require 'core/bootstrap.php';
 
 require Router::load('routes.php')

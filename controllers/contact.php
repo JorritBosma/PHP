@@ -1,5 +1,5 @@
 <?php
 
 $naam = "Waarom wordt ik niet doorgepasst?";
-$pizza = 'Salami';
+$lievelingseten = 'Burritos';
 require 'views/contact.view.php';
