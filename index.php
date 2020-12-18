@@ -1,5 +1,5 @@
 <?php
-$naam = 'Jorrit';
+require './vendor/autoload.php';
 require 'core/bootstrap.php';
 
 require Router::load('routes.php')
