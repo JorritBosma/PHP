@@ -10,7 +10,7 @@
             <a href="contact">Contact us</a>
         </li>
         <li>
-            <a href="culture">About Our Culture</a>
+            <a href="users">Alle Gebruikers</a>
         </li>
     </ul>
 </nav>

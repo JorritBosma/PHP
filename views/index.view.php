@@ -1,14 +1,6 @@
 <?php require('partials/head.php'); ?>
 
-<ul><strong>Gebruikers</strong>
-    <?php foreach ($users as $user) : ?>
-        <li><?= $user->name; ?></li>
-    <?php endforeach; ?>
-</ul>
-<h1>Vul je naam maar in hoor</h1>
+<h1>Home Page</h1>
 
-<form method="POST" action="/names">
-    <input name="name"></input>
-    <button type="submit">Indienen maar!</button>
-</form>
+<p>Welkom, hoor, mensen, welkom!</p>
 <?php require('partials/footer.php'); ?>
