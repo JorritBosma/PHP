@@ -1,6 +1,12 @@
 <?php
 
-var_dump('Volgens mij heet jij ' . $_POST['name'] . ', toch?');
+$app['database']->insert('users', [
+    'name' => $_POST['name']
+]);
+
+header('Location: /');
+
+// var_dump('Volgens mij heet jij ' . $_POST['name'] . ', toch?');
 
 // var_dump($_GET['name']);
 
